@@ -11,17 +11,17 @@ import {
   REGISTER,
 } from 'redux-persist';
 import { wordsReducer } from './wordsSlice';
-import { filterReducer } from './filterSlice';
+// import { filterReducer } from './filterSlice';
 
 const persistConfig = {
   key: 'root',
   storage,
-  whitelist: ['contacts'],
+  whitelist: ['words'],
 };
 
 const rootReducer = combineReducers({
   words: wordsReducer,
-  filter: filterReducer,
+  // filter: filterReducer,
 });
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 

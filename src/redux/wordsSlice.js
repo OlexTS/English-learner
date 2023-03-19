@@ -1,19 +1,22 @@
-import { createSlice, nanoid } from '@reduxjs/toolkit';
+import { createSlice } from '@reduxjs/toolkit';
 
-const addWordsSlice = createSlice({
+const wordsSlice = createSlice({
   name: 'words',
   initialState: [],
   reducers: {
     addWord(state, action) {
-      const word = { ...action.payload, id: nanoid() };
-      state.push(word);
+      state.push(action.payload);
     },
     deleteWord(state, action) {
       const index = state.findIndex(word => word.id === action.payload);
-      state.slice(index, 1);
+      state.splice(index, 1);
+    },
+    editWord(state, action) {
+      const index = state.findIndex(word => word.id === action.payload.id);
+      state.splice(index, 1, action.payload);
     },
   },
 });
 
-export const wordsReducer = addWordsSlice.reducer;
-export const { addWord, deleteWord } = addWordsSlice.actions;
+export const wordsReducer = wordsSlice.reducer;
+export const { addWord, deleteWord, editWord } = wordsSlice.actions;
