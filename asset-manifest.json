@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/English-learner/static/css/main.3fb42299.css",
-    "main.js": "/English-learner/static/js/main.41a57bde.js",
-    "static/js/483.c7399766.chunk.js": "/English-learner/static/js/483.c7399766.chunk.js",
+    "main.js": "/English-learner/static/js/main.b4463ead.js",
+    "static/js/371.1df39f54.chunk.js": "/English-learner/static/js/371.1df39f54.chunk.js",
     "static/js/830.f1bb60c8.chunk.js": "/English-learner/static/js/830.f1bb60c8.chunk.js",
     "static/js/163.06ec4382.chunk.js": "/English-learner/static/js/163.06ec4382.chunk.js",
     "index.html": "/English-learner/index.html",
     "main.3fb42299.css.map": "/English-learner/static/css/main.3fb42299.css.map",
-    "main.41a57bde.js.map": "/English-learner/static/js/main.41a57bde.js.map",
-    "483.c7399766.chunk.js.map": "/English-learner/static/js/483.c7399766.chunk.js.map",
+    "main.b4463ead.js.map": "/English-learner/static/js/main.b4463ead.js.map",
+    "371.1df39f54.chunk.js.map": "/English-learner/static/js/371.1df39f54.chunk.js.map",
     "830.f1bb60c8.chunk.js.map": "/English-learner/static/js/830.f1bb60c8.chunk.js.map",
     "163.06ec4382.chunk.js.map": "/English-learner/static/js/163.06ec4382.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3fb42299.css",
-    "static/js/main.41a57bde.js"
+    "static/js/main.b4463ead.js"
   ]
 }
