@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/830.f1bb60c8.chunk.js","mappings":"2JAQA,UARkB,WAChB,OACE,kBAIH,C","sources":["pages/WorkSpace.jsx"],"sourcesContent":["const WorkSpace = () => {\n  return (\n    <div>\n     \n    </div>\n  );\n};\n\nexport default WorkSpace;\n"],"names":[],"sourceRoot":""}
