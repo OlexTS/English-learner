@@ -2,6 +2,7 @@ import { Button, FormControlLabel, Checkbox } from '@mui/material';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { deleteWord, editWord } from 'redux/wordsSlice';
+import { toggleChecked } from 'redux/wordsSlice';
 
 export const WordsListItem = ({
   word: { wordUk, wordEn, checked, id },
@@ -11,6 +12,7 @@ export const WordsListItem = ({
   const [isEdit, setIsEdit] = useState(false);
   const [ukOption, setUkOption] = useState(wordUk);
   const [enOption, setEnOption] = useState(wordEn);
+  // const [toggleChecked, SetToggleChecked] = useState(false);
   const dispatch = useDispatch();
 
   const handleDeleteWord = () => {
@@ -26,6 +28,9 @@ export const WordsListItem = ({
     setIsEdit(true);
   };
 
+  const handleChecked = () => {
+    dispatch(toggleChecked(id))
+  }
   return (
     <li
       style={{
@@ -34,7 +39,7 @@ export const WordsListItem = ({
         alignItems: 'center',
       }}
     >
-      <FormControlLabel control={<Checkbox checked={checked} />} />
+      <FormControlLabel control={<Checkbox checked={checked} onChange={handleChecked} />} />
       <span>{idx}</span>
       {isEdit ? (
         <input

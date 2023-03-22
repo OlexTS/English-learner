@@ -15,8 +15,11 @@ const wordsSlice = createSlice({
       const index = state.findIndex(word => word.id === action.payload.id);
       state.splice(index, 1, action.payload);
     },
+    toggleChecked(state, action) {
+      return state.map(word => word.id === action.payload ? { ...word, checked: !word.checked } : word);
+    },
   },
 });
 
 export const wordsReducer = wordsSlice.reducer;
-export const { addWord, deleteWord, editWord } = wordsSlice.actions;
+export const { addWord, deleteWord, editWord, toggleChecked } = wordsSlice.actions;

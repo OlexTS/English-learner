@@ -1,9 +1,9 @@
 import { useSelector } from 'react-redux';
-import { selectWords } from 'redux/selectors';
+import { selectFilteredWords } from 'redux/selectors';
 import { WordsListItem } from '../WordsListItem/WordsListItem';
 
 export const WordsList = () => {
-  const words = useSelector(selectWords);
+  const words = useSelector(selectFilteredWords);
   return (
     <ul style={{}}>
       {words.map((word, idx) => (
